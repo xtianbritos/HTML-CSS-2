@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form action="procesar-incidencia.php" method="post">
+        <div class="datos">
+            <span>Datos de la incidencia:</span>
+
+            <label for="usuario">Usuario:</label>
+            <br>
+            <input type="text" id="usuario" required>
+            <br>
+            <br>
+
+            <label for="departamento">Departamento:</label>
+            <br>
+            <select id="departamento" required>
+                <option>Informática</option>
+                <option>Marketing</option>
+                <option>Ventas</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="descripcion">Descripción</label>
+            <br>
+            <textarea id="descripcion" cols="40" rows="3" required placeholder="Escriba la incidencia..."></textarea>
+
+            <br><br>
+
+            <label for="contraseña">Contraseña</label>
+            <br>
+            <input type="password" id="contraseña" required>
+        </div>
+
+        <div>
+            <span>Botones de reset y envío:</span>
+
+            <button type="reset">Resetear</button>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
