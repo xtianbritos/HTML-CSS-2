@@ -9,8 +9,9 @@
 </head>
 <body>
     <form action="procesar-incidencia.php" method="post">
-        <div class="datos">
-            <span>Datos de la incidencia:</span>
+
+        <fieldset>
+            <legend>Datos de la incidencia:</legend>
 
             <label for="usuario">Usuario:</label>
             <br>
@@ -20,7 +21,7 @@
 
             <label for="departamento">Departamento:</label>
             <br>
-            <select id="departamento" required>
+            <select id="departamento">
                 <option>Informática</option>
                 <option>Marketing</option>
                 <option>Ventas</option>
@@ -38,14 +39,14 @@
             <label for="contraseña">Contraseña</label>
             <br>
             <input type="password" id="contraseña" required>
-        </div>
+        </fieldset>
 
-        <div>
-            <span>Botones de reset y envío:</span>
+        <fieldset>
+            <legend>Botones de reset y envío:</legend>
 
             <button type="reset">Resetear</button>
             <button type="submit">Enviar</button>
-        </div>
+        </fieldset>
     </form>
 </body>
 </html>
